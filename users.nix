@@ -5,6 +5,7 @@
     isNormalUser = true;
     home = "/home/w4cbe";
     description = "Winston R. Milling";
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" ];
   };
 }
