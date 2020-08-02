@@ -12,7 +12,6 @@
       ./packages.nix
       ./users.nix
       ./desktop.nix
-      ./networks.nix
     ];
 
   # Use the extlinux boot loader. (NixOS wants to enable GRUB by default)
