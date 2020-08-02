@@ -14,6 +14,8 @@
     zsh
     st
     mc
+    p7zip
+    weechat
 
     # Useful Applications
     firefox
@@ -26,6 +28,5 @@
 
     # Kernel Tools
     dtc
-
   ];
 }

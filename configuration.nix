@@ -12,7 +12,8 @@
       ./packages.nix
       ./users.nix
       ./desktop.nix
-    ];
+      ./private.nix  
+  ];
 
   # Use the extlinux boot loader. (NixOS wants to enable GRUB by default)
   boot.loader.grub.enable = false;
@@ -76,6 +77,7 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.package = pkgs.pulseaudioFull;
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
