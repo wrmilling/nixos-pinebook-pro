@@ -5,7 +5,7 @@
 
   services.xserver = {
     enable = true;
-    autorun = false; 
+    autorun = true; 
     layout = "us";
     libinput.enable = true;
 
