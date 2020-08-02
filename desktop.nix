@@ -29,7 +29,12 @@
       ];
     }; 
   };
-  
+ 
+  services.logind.extraConfig = ''
+    HandleLidSwitch=ignore
+    HandlePowerKey=ignore
+  '';
+ 
   services.picom = {
     enable = true;
     backend = "glx";
