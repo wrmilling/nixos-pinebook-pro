@@ -15,6 +15,12 @@
 
   swapDevices = [ ];
 
+  zramSwap = {
+    enable = true;
+    algorithm = "zstd";
+    memoryPercent = 150;
+  };
+
   boot.kernelPatches = [
     {
       name = "overclock-5.7";
