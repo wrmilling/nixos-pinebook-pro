@@ -13,9 +13,12 @@
     nvme-cli
     zsh
     st
+    mc
 
     # Useful Applications
     firefox
+    rclone
+    keepassxc
 
     # Graphics Stuff
     mesa
