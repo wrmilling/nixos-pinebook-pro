@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./overlay/pinebook_pro.nix
-      ./hardware-configuration.nix
+      ./hardware.nix
       ./packages.nix
       ./users.nix
       ./desktop.nix
