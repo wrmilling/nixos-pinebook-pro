@@ -15,6 +15,8 @@
     st
     mc
     p7zip
+    wget
+    xclip
     weechat
 
     # Useful Applications

@@ -10,6 +10,7 @@
       ./overlay/pinebook_pro.nix
       ./hardware.nix
       ./packages.nix
+      ./services.nix
       ./users.nix
       ./desktop.nix
       ./private.nix  
@@ -28,8 +29,10 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   networking.useDHCP = false;
-  networking.interfaces.eth0.useDHCP = true;
-  networking.interfaces.wlan0.useDHCP = true;
+  #networking.interfaces.eth0.useDHCP = true;
+  #networking.interfaces.wlan0.useDHCP = true;
+  
+  boot.supportedFilesystems = [ "nfs" ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
