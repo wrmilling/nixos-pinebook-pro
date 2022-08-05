@@ -17,6 +17,7 @@
 
     # Graphical Basics
     mesa
+    glxinfo
     alacritty
     firefox
     
