@@ -29,9 +29,6 @@
   };
 
   boot.kernelParams = lib.mkAfter [ "console=tty0" ];
-  
-  boot.trace = true;
-  boot.shell_on_fail = true;  
 
   networking.hostName = "serenity"; # Define your hostname.
   # Pick only one of the below networking options.
