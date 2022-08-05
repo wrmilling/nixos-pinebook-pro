@@ -12,16 +12,19 @@
     zsh
     wget
     chezmoi
-   
-    # GPG
     gnupg
     pinentry-curses
 
-    # Graphical
+    # Graphical Basics
     mesa
     alacritty
     firefox
+    
+    # Chat
     element-desktop
+    
+    # Development
+    vscode
   ];
 
   fonts.fonts = with pkgs; [
