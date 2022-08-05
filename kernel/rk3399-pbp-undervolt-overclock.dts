@@ -4,7 +4,7 @@
 
 
 / {
-  compatible = "pine64,pinebook-pro", "rockchip,rk3399";
+  compatible = "pine64,pinebook-pro";
   fragment@0 {
     target = <&cluster0_opp>;
     __overlay__ {
