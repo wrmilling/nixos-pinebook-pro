@@ -28,6 +28,7 @@
     };
   };
 
+  boot.kernelModules = lib.mkAfter [ "zram" ];
   boot.kernelParams = lib.mkAfter [ "console=tty0" ];
 
   networking.hostName = "serenity"; # Define your hostname.
