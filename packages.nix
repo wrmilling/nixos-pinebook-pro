@@ -1,34 +1,30 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    # Basic Terminal Stuff
+    # Terminal Basics
     vim
     htop
     tmux
     git
-    yadm
-    nvme-cli
     zsh
-    st
-    mc
-    p7zip
     wget
-    xclip
-    weechat
+    chezmoi
+   
+    # GPG
+    gnupg
+    pinentry-curses
 
-    # Useful Applications
-    firefox
-    rclone
-    keepassxc
-
-    # Graphics Stuff
+    # Graphical
     mesa
-    glxinfo
+    alacritty
+    firefox
+    element-desktop
+  ];
 
-    # Kernel Tools
-    dtc
+  fonts.fonts = with pkgs; [
+    source-code-pro
   ];
 }

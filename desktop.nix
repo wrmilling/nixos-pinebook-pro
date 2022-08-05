@@ -7,7 +7,12 @@
     enable = true;
     autorun = true; 
     layout = "us";
-    libinput.enable = true;
+    libinput = {
+      enable = true;
+      touchpad = {
+        naturalScrolling = true;
+      };
+    };
 
     desktopManager = {
       xterm.enable = false;
@@ -37,7 +42,8 @@
  
   services.picom = {
     enable = true;
-    backend = "xrender";
+    backend = "glx";
+    inactiveOpacity = 0.8;
   };
 
 }

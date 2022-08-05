@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
   users.users.w4cbe = {
@@ -6,7 +6,7 @@
     home = "/home/w4cbe";
     description = "Winston R. Milling";
     shell = pkgs.zsh;
-    extraGroups = [ 
+    extraGroups = [
       "wheel"
       "networkmanager"
     ];
