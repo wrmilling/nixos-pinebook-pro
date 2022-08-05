@@ -22,9 +22,13 @@
 
   boot.initrd.luks.devices = {
     cryptroot = {
-      device = "/dev/mmcblk0p2";
+      device = "/dev/disk/by-uuid/f9618ef7-0e79-4181-8a05-d95c300bb10f";
       allowDiscards = true;
       preLVM = true;
+    };
+    cryptnvme = {
+      device = "/dev/disk/by-uuid/92cf1e12-72a6-48fd-911f-5249183e5c64";
+      allowDiscards = true;
     };
   };
 
