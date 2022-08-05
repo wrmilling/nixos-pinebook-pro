@@ -11,6 +11,7 @@
       ./hardware.nix
       ./packages.nix
       ./users.nix
+      ./services.nix
       ./desktop.nix
       ./private.nix
     ];
