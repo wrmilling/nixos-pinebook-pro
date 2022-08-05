@@ -25,6 +25,7 @@
     
     # Development
     vscode
+    dtc
   ];
 
   fonts.fonts = with pkgs; [
