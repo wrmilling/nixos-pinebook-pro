@@ -1,0 +1,44 @@
+
+/dts-v1/;
+/plugin/;
+
+
+/ {
+  fragment@0 {
+    target = <&cluster0_opp>;
+    __overlay__ {
+      opp06 {
+        opp-hz = /bits/ 64 <1512000000>;
+        opp-microvolt = <1150000 1150000 1200000>;
+      };
+      opp07 {
+        opp-hz = /bits/ 64 <1608000000>;
+        opp-microvolt = <1200000 1200000 1200000>;
+      };
+    };
+  };
+
+  fragment@1 {
+    target = <&cluster1_opp>;
+    __overlay__ {
+      opp08 {
+        opp-hz = /bits/ 64 <2016000000>;
+        opp-microvolt = <1250000 1250000 1250000>;
+      };
+      opp09 {
+        opp-hz = /bits/ 64 <2088000000>;
+        opp-microvolt = <1250000 1250000 1250000>;
+      };
+    };
+  };
+
+  fragment@3 {
+    target = <&gpu_opp_table>;
+    __overlay__ {
+      opp06 {
+        opp-hz = /bits/ 64 <950000000>;
+        opp-microvolt = <1200000 1200000 1200000>;
+      };
+    };
+  };
+};

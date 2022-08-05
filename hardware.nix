@@ -10,6 +10,12 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  hardware.deviceTree = {
+    overlays = [
+      { name = "precompiled"; dtboFile = "${./kernel/rk3399-pbp-undervolt-overclock.dtbo}"; }
+    ];
+  };
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/34035012-4604-43ed-8df5-0a0294857c5e";
       fsType = "ext4";
