@@ -1,3 +1,0 @@
-[submodule "overlay"]
-	path = overlay
-	url = https://github.com/samueldr/wip-pinebook-pro.git
