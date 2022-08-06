@@ -29,7 +29,7 @@
 
       extraPackages = with pkgs; [
         dmenu
-        i3status
+        i3status-rust
         feh
       ];
     }; 
