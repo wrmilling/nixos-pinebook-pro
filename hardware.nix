@@ -37,4 +37,11 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
   powerManagement.cpuFreqGovernor = lib.mkDefault "ondemand";
+
+  sound.enable = true;
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.package = pkgs.pulseaudioFull;
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 }
