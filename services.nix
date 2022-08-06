@@ -5,11 +5,10 @@
     description = "Mount encrypted NVMe for PBP";
     wantedBy = [ "multi-user.target" ];
     unitConfig.ConditionPathExists = [ "" "/dev/nvme0" ];
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-      ExecStart = "/home/luks/mount.sh";
-    };
+    script = ''
+      cryptsetup luksOpen /dev/nvme0n1 nvmecrypt --key-file /home/luks/nvme.key
+      mount /dev/mapper/nvmecrypt /NVMe
+    '';
   };
 }
 
