@@ -27,9 +27,18 @@
     # Development
     vscode
     dtc
+    
+    # K8s
+    kubectl
+    fluxcd
+    helm
+    stern
+    sops
+    k9s
   ];
 
   fonts.fonts = with pkgs; [
     source-code-pro
+    font-awesome_5
   ];
 }
