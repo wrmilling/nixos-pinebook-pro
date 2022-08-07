@@ -20,7 +20,8 @@
     glxinfo
     alacritty
     firefox
-    
+    flameshot
+
     # Chat
     element-desktop
     
