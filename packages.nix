@@ -39,6 +39,6 @@
 
   fonts.fonts = with pkgs; [
     source-code-pro
-    font-awesome_5
+    font-awesome_4
   ];
 }
