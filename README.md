@@ -1,4 +1,7 @@
 # nixos-pinebook-pro
+
+Archived, all content is now in wrmilling/nixos-configuration repository. 
+
 NixOS Pinebook Pro Configuration
 
 README.md is a todo item, just like the rest of this. It will be fleshed out when the configuration is mostly stable. 
